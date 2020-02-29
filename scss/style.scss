@@ -55,6 +55,12 @@ h2 {
     }
 }
 
+.form {
+    .btn {
+        margin-bottom: 0;
+    }
+}
+
 //header
 .header {
     min-height: 100vh;
@@ -483,7 +489,7 @@ h2 {
 //section map
 
 .map {
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: grey;
 }
 
@@ -593,50 +599,6 @@ h2 {
         top: 2em;
         opacity: 0;
     }
-
-    // 2 
-    // & input {
-    //     width: 100%;
-    //     margin-bottom: 20px;
-    //     padding: 5px 0 20px;
-    //     border: none;
-    //     outline: none;
-    //     border-bottom: 1px solid $color-main;
-    //     opacity: 0.6;
-
-    //     @include hfa {
-    //         opacity: 1;
-    //     }
-
-    //     &::placeholder {
-    //         color: $color-main;
-    //         font-family: $text-gb;
-    //     }
-
-    //     &::-webkit-input-placeholder {
-    //         /* Chrome/Opera/Safari */
-    //         color: $color-main;
-    //         font-family: $text-gb;
-    //     }
-
-    //     &::-moz-placeholder {
-    //         /* Firefox 19+ */
-    //         color: $color-main;
-    //         font-family: $text-gb;
-    //     }
-
-    //     &:-ms-input-placeholder {
-    //         /* IE 10+ */
-    //         color: $color-main;
-    //         font-family: $text-gb;
-    //     }
-
-    //     &:-moz-placeholder {
-    //         /* Firefox 18- */
-    //         color: $color-main;
-    //         font-family: $text-gb;
-    //     }
-    // }
 
 }
 

@@ -187,6 +187,7 @@
             left: 0;
             right: 0;
             transform: translate(0, 0);
+            margin-bottom: 20px;
         }
 
         &__content {
@@ -237,9 +238,17 @@
 
     .getInTouch {
         padding: 20px 10px;
+
+        &__wrap {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .form {
+        width: 100%;
+
         .btn {
             width: 100%;
         }
