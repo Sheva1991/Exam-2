@@ -1,0 +1,160 @@
+//first slider
+.slider {
+    min-height: 100%;
+    position: relative;
+
+    &__dots {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        & li {
+            font-size: 0;
+            margin-bottom: 40px;
+        }
+
+        & button {
+            width: 10px;
+            height: 10px;
+            line-height: 10px;
+            border: 1px solid $color-w;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 0;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+
+            @include hfa {
+                border-color: $color-w;
+                background-color: #fff;
+            }
+
+        }
+
+        & .slick-active button {
+            border-color: $color-w;
+            background-color: #fff;
+        }
+    }
+
+}
+
+.slide {
+    outline: none;
+    text-align: center;
+
+    &__content {
+        padding: 20px;
+        min-height: 100vh;
+        background-image: url(../img/bg.png), linear-gradient(45deg, rgba(85, 183, 255, 0.94) 0%, rgba(126, 90, 255, 0.94) 100%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.slick-vertical .slick-slide {
+    border: none;
+}
+
+
+//second slider
+.sliderNews {
+    position: relative;
+    max-width: 1170px;
+    width: 100%;
+
+    &__dots {
+        display: flex;
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+
+
+        & li {
+            font-size: 0;
+            margin-right: 40px;
+        }
+
+        & button {
+            width: 10px;
+            height: 10px;
+            line-height: 10px;
+            border: 1px solid $color-w;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 0;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+
+            @include hfa {
+                border-color: $color-w;
+                background-color: #fff;
+            }
+
+        }
+
+        & .slick-active button {
+            border-color: $color-w;
+            background-color: #fff;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        outline: none;
+        top: 0;
+        bottom: 0;
+        font-size: 1 rem;
+        color: $color-w;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 1;
+
+
+        & i {
+            height: 42px;
+            width: 42px;
+            line-height: 42px;
+            border-radius: 50%;
+            border: 1px solid $color-w;
+            transition: all .4s ease-in;
+            font-size: 10px;
+        }
+
+        &--left {
+            left: -5%;
+        }
+
+        &--right {
+            right: -5%;
+        }
+
+        @include hfa {
+            i {
+                background-color: $color-w;
+                color: $brand-color;
+            }
+        }
+    }
+}
+
+
+
+.slideNews {
+    outline: none;
+
+    &__content {
+        height: 520px;
+        width: 370px;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+}
