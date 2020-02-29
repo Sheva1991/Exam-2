@@ -76,7 +76,8 @@ inputs.forEach(function (input) {
 
 document.addEventListener("DOMContentLoaded", function () {
     yall({
-        observeChanges: true
+        observeChanges: true,
+        threshold: 400,
     });
 });
 
