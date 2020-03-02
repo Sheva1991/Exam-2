@@ -9,6 +9,8 @@ $(document).ready(() => {
         vertical: true,
         verticalSwiping: true,
         mobileFirst: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         cssEase: 'linear'
     });
 

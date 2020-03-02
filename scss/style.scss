@@ -198,7 +198,6 @@ h2 {
 // section What we Do
 
 .section {
-    text-align: center;
     overflow: hidden;
     padding: 100px 10px;
 
@@ -293,6 +292,12 @@ h2 {
             transform: translate(-50%, -50%);
             box-shadow: -200px -70px 0 $color-date;
         }
+    }
+
+    &__title {
+        @include font($fz-h2, $color-h, 400, $text-gbold, 1.2);
+        text-transform: uppercase;
+        margin: 0;
     }
 
     &__subtitle {
